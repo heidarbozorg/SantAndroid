@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Sant</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="InternetDisconnect">تا زمانی که دستگاه به اینترنت متصل نیست نمیتوانید این دستور را اجرا کنید</string>
+    <string name="LoginFormTitle">فرم ورود کاربر</string>
+    <string name="SelectReciver">گیرندگان را انتخاب نمایید</string>
+    <string name="SelectSharheEghdam">شرح اقدام را انتخاب نمایید</string>
+    <string name="EnterHamesh">متن هامش را وارد کنید</string>
+    <string name="IvalidUsernameAndPassword">نام کاربری یا رمز عبور صحیح نمی باشد</string>
+    <string name="CanNotSaveFinalResponse">در حال حاضر امکان ثبت پاسخ نهایی برای شما وجود ندارد</string>
+    <string name="UsernameRequire">نام کاربری را وارد کنید</string>
+    <string name="PasswordRequire">رمز عبور را وارد کنید</string>
+    <string name="UserName">نام کاربری (ایمیل)</string>
+    <string name="Password">رمز عبور</string>
+    <string name="EnterLogin">ورود</string>
+    <string name="ForgetPassword">فراموشی رمز عبور</string>
+    <string name="Sant">سیستم الکترونیکی نگهداری و تعمیرات</string>
+    <string name="SantSplash">سانت</string>
+    <string name="Farzanegan">www.FarzaneganCo.com</string>
+    <string name="Farzanegan1">کاری از شرکت داده پردازی فرزانگان ساعی</string>
+    <string name="TopTitleKartabl">کارتابل</string>
+    <string name="SharheDarkhast">شرح درخواست :</string>
+    <string name="NameTaghiz">نام تجهیز :</string>
+    <string name="MahaleTaghiz">محل استقرار :</string>
+    <string name="DarkhastKonande">درخواست کننده :</string>
+    <string name="DateDarkhast">تاریخ درخواست :</string>
+    <string name="NoDarkhast">شماره درخواست :</string>
+    <string name="AzSaat">از ساعت :</string>
+    <string name="TaSaat">تا ساعت :</string>
+    <string name="SharheEghdam">شرح اقدام :</string>
+    <string name="Sabt">ثبت</string>
+    <string name="Back">بازگشت</string>
+    <string name="Resivers">گیرنده (گان) :</string>
+    <string name="Resiver">گیرنده</string>
+    <string name="Olaviat">اولویت :</string>
+    <string name="MohlateEghdam">مهلت اقدام :</string>
+    <string name="Hamesh">هامش :</string>
+    <string name="DatePasokh">تاریخ پاسخ :</string>
+    <string name="VaziateKar">وضعیت کار :</string>
+    <string name="GhabeleAnjaam">قابل انجام</string>
+    <string name="GheyreGhabeleAnjam">غیر قابل انجام</string>
+    <string name="PayaneKar">کار پایان یافت</string>
+    <string name="SharheTamir">شرح تعمیر :</string>
+    <string name="DateEghdam">تاریخ اقدام :</string>
+    <string name="Erja">ارجاع</string>
+    <string name="Eghdam">اقدام</string>
+    <string name="Need">نیاز به قطعه</string>
+    <string name="PasokheNahaee">پاسخ نهایی</string>
+    <string name="DarMahalHazerShodam">در محل حاضر شدم</string>
+    <string name="ElateKharabi">علت خرابی :</string>
+    <string name="SharheKharabi">شرح خرابی :</string>
+    <string name="GPSW">عرض جغرافیایی :</string>
+    <string name="GPSL">طول جغرافیایی :</string>
+    <string name="ResiverGroup">Resiver Group</string>
+    <string name="GPSError">برنامه قادر به خواندن موقعیت مکانی شما نیست. از فعال بودن جی پی اس دستگاه خود مطمئن شوید</string>
+    <string name="GPSSendSuccess">اطلاعات موقعیت مکانی شما با موفقیت ثبت شد</string>
+    <string name="TurnOnGPS">جی پی اس دستگاه شما خاموش است. آیا مایل به روشن کردن آن هستید؟</string>
+</resources>
