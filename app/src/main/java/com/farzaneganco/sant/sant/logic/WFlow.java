@@ -55,7 +55,7 @@ public class WFlow {
 					wflow.MahaleEsteghrar = response.getString("makan");
 
 					com.farzaneganco.sant.sant.logic.DP.Inbox.Update(ctx, wflow);
-					//com.farzaneganco.sant.sant.Inbox.adapter.notifyDataSetChanged();
+					com.farzaneganco.sant.sant.Inbox.adapter.notifyDataSetChanged();
 				}
 				catch(Exception e){
 					Log.i("User", "Error in logic.WFlow.onSuccessVolleyFinished: " + e.getMessage());

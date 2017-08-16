@@ -11,15 +11,13 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-//public class InboxAdapter extends ArrayAdapter<com.farzaneganco.sant.sant.logic.WFlow>  {
-public class InboxAdapter   {
-	/*
+public class InboxAdapter extends ArrayAdapter<com.farzaneganco.sant.sant.logic.WFlow>  {
 	private final ArrayList<com.farzaneganco.sant.sant.logic.WFlow> list;
 	private final Activity context;
 
 	public InboxAdapter(Activity context, ArrayList<com.farzaneganco.sant.sant.logic.WFlow> list) {
 		//super(context, R.layout.note_item);
-		//super(context, R.layout.inbox_item, list);
+		super(context, R.layout.inbox_item, list);
 		this.context = context;
 		this.list = list;
 	}
@@ -104,5 +102,4 @@ public class InboxAdapter   {
 		}
 		return convertView;
 	}
-	*/
 }

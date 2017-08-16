@@ -15,14 +15,12 @@ import android.widget.ToggleButton;
 
 import com.farzaneganco.sant.sant.R;
 
-//public class ComboReciverAdapter extends ArrayAdapter<com.farzaneganco.sant.sant.logic.User> {
-public class ComboReciverAdapter  {
+public class ComboReciverAdapter extends ArrayAdapter<com.farzaneganco.sant.sant.logic.User> {
 	ArrayList<com.farzaneganco.sant.sant.logic.User> q;
 	Context ctx;
 
-	/*
 	public ComboReciverAdapter(Context ctx, ArrayList<com.farzaneganco.sant.sant.logic.User> objects) {
-		//super(ctx, R.layout.custom_spinner, objects);
+		super(ctx, R.layout.custom_spinner, objects);
 		this.q = objects;
 		this.ctx = ctx;
 	}
@@ -63,6 +61,5 @@ public class ComboReciverAdapter  {
 
 		return mySpinner;
 	}
-	*/
 
 }

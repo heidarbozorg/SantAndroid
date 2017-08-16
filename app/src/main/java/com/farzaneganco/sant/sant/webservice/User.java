@@ -7,6 +7,8 @@ import java.util.Map;
 import com.farzaneganco.sant.sant.volley.utils.AppController;
 import com.farzaneganco.sant.sant.volley.utils.ArrayRequest;
 import com.farzaneganco.sant.sant.volley.utils.MyVolley;
+
+import android.app.Application;
 import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
@@ -43,6 +45,7 @@ public class User {
 						}
 					}) { };
 			String tag_json_obj = "json_obj_req";
+
 			AppController.getInstance().addToRequestQueue(jsonObjReq, tag_json_obj);
 			return (true);
 		} catch (Exception e) {

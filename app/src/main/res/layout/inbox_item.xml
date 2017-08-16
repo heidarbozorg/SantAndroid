@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearInboxItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@color/White"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvInboxTarikheErja"
+                style="@style/Date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="تاریخ ارجاع" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvInboxMohlatEghdam"
+                style="@style/Date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="مهلت اقدام" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvInboxMozoo"
+            style="@style/TitleItem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:text="موضوع" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="10" >
+
+        <TextView
+            android:id="@+id/tvInboxShomarePeigiry"
+            style="@style/DescribtionItem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="left|center_horizontal"
+            android:text="شماره پیگیری" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvInboxVaziatDarkhast"
+            style="@style/DescribtionItem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="وضعیت" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvInboxErjadahande"
+            style="@style/DescribtionItem"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:gravity="right"
+            android:text="ارجاع دهنده" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvInboxMahalEsteghrar"
+            style="@style/DescribtionItem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="محل استقرار" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvInboxTajhizName"
+            style="@style/DescribtionItem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="نام تجهیز" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvDescInboxItem"
+            style="@style/DescribtionItem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="شرح ارجاع"
+            android:lineSpacingExtra="8dp" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

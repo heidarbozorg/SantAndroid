@@ -1,0 +1,439 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Gray2" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Gray2"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/action_bar" />
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/darkhast_info" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Gray2"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/White"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="9" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            style="@style/spinnereciver"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:background="@drawable/spinner_border"
+                            android:clickable="true"
+                            android:drawSelectorOnTop="true"
+                            android:dropDownVerticalOffset="-53dp"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:id="@+id/tvSpiner1"
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/ElateKharabi" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            style="@style/spinnereciver"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:background="@drawable/spinner_border"
+                            android:clickable="true"
+                            android:drawSelectorOnTop="true"
+                            android:dropDownVerticalOffset="-53dp"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:id="@+id/tvSpiner2"
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/SharheKharabi" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            style="@style/spinnereciver"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:background="@drawable/spinner_border"
+                            android:clickable="true"
+                            android:drawSelectorOnTop="true"
+                            android:dropDownVerticalOffset="-53dp"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:id="@+id/tvSpiner3"
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/SharheKharabi" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <Spinner
+                            android:id="@+id/spinner4"
+                            style="@style/spinnereciver"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:background="@drawable/spinner_border"
+                            android:clickable="true"
+                            android:drawSelectorOnTop="true"
+                            android:dropDownVerticalOffset="-53dp"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:id="@+id/tvSpiner4"
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/SharheEghdam" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <EditText
+                            android:id="@+id/edtSharheEghdamForward"
+                            style="@style/FillDarkhastInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="6"
+                            android:background="@drawable/edit_text_border" />
+
+                        <TextView
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/SharheEghdam" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <TextView
+                            android:id="@+id/tvDateEghdam_Eghdam"
+                            style="@style/FillDarkhastInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="6"
+                            android:background="@drawable/edit_text_border"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/tvDateEghdam"
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/DateEghdam" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <TextView
+                            android:id="@+id/tvTaSaatEghdam"
+                            style="@style/FillDarkhastInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/edit_text_border"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <TextView
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="@string/TaSaat" />
+
+                        <TextView
+                            android:id="@+id/tvAzSaatEghdam"
+                            style="@style/FillDarkhastInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:background="@drawable/edit_text_border"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <TextView
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/AzSaat" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/Gray2"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:paddingBottom="10dp"
+                    android:weightSum="9" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/White"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:weightSum="9" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <Spinner
+                            android:id="@+id/spinnerResiver"
+                            style="@style/spinnereciver"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:background="@drawable/spinner_border"
+                            android:clickable="true"
+                            android:drawSelectorOnTop="true"
+                            android:dropDownVerticalOffset="-53dp"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            android:id="@+id/tvOlaviat"
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/Resiver" />
+
+                        <TextView
+                            android:id="@+id/tvResivers"
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/Resiver" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <Spinner
+                            android:id="@+id/spinnerOlaviat"
+                            style="@style/spinnereciver"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:background="@drawable/spinner_border"
+                            android:clickable="true"
+                            android:drawSelectorOnTop="true"
+                            android:dropDownVerticalOffset="-53dp"
+                            android:spinnerMode="dropdown" />
+
+                        <TextView
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/Olaviat" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <TextView
+                            android:id="@+id/tvSaateEghdam_Forward"
+                            style="@style/FillDarkhastInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_border"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/tvDateMohlatEghdam_Forward"
+                            style="@style/FillDarkhastInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:background="@drawable/edit_text_border"
+                            android:gravity="center_vertical|center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/tvDateMohlatEghdam"
+                            style="@style/TitleUnder"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/MohlateEghdam" />
+                    </LinearLayout>
+
+                   <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp"
+                        android:weightSum="9" >
+
+                        <EditText
+                            android:id="@+id/edtHamesh"
+                            style="@style/FillDarkhastInfo"
+                            android:layout_width="0dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="6"
+                            android:background="@drawable/edit_text_border" />
+                        <TextView
+                            style="@style/TitleUnder"
+                             android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/Hamesh" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/White"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp" >
+
+                        <Button
+                            android:id="@+id/BtnForwardSabt"
+                            style="@style/button_sabt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_sabt"
+                            android:text="@string/Sabt" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/navigashon_menu" />
+
+</android.support.v4.widget.DrawerLayout>

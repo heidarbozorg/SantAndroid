@@ -3,6 +3,7 @@ package com.farzaneganco.sant.sant;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -19,6 +20,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -30,7 +32,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.VolleyError;
 import com.farzaneganco.sant.sant.*;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -298,11 +304,70 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
     @Override
     protected Boolean doInBackground(Void... params) {
-      // TODO: attempt authentication against a network service.
-
       try {
-        // Simulate network access.
-        Thread.sleep(2000);
+        Thread.sleep(100);
+
+        if (com.farzaneganco.sant.sant.logic.Variables.user == null)
+          com.farzaneganco.sant.sant.logic.Variables.user = new com.farzaneganco.sant.sant.logic.User(mEmail, mPassword);
+        else
+        {
+          com.farzaneganco.sant.sant.logic.Variables.user.SetUsername(mEmail);
+          com.farzaneganco.sant.sant.logic.Variables.user.SetPassword(mPassword);
+        }
+
+        com.farzaneganco.sant.sant.webservice.User.Login(com.farzaneganco.sant.sant.logic.Variables.user,
+          new com.farzaneganco.sant.sant.webservice.Common.Result() {
+
+          @Override
+          public void onSuccessVolleyFinished(JSONObject response, com.farzaneganco.sant.sant.logic.User user) {
+            // TODO Auto-generated method stub
+            Log.i("Response", response.toString());
+            user.SetPersonelId(-100);
+            try {
+              // در صورت صحیح بودن نام کاربری و رمز عبور
+              user.FName = response.getString("fName");
+              user.LName = response.getString("lName");
+              user.FullName = (user.FName == null ? "" : user.FName) + " " + (user.LName == null ? "" : user.LName);
+              user.MySazmanId = response.getInt("mySazmanId");
+              user.SetPersonelId(response
+                .getInt("personelId"));
+              com.farzaneganco.sant.sant.logic.Bind.SaveUserInfo(getApplicationContext());
+              Intent inbox = new Intent(getApplicationContext(), Inbox.class);
+              startActivity(inbox);
+              //finish();
+            } catch (JSONException e) {
+              // TODO Auto-generated catch block
+              Log.i("User", "Error in Webservice.User.OnResponse: " + e.getMessage());
+              Toast.makeText(getApplicationContext(), "خطا در شبکه", Toast.LENGTH_LONG).show();
+            }
+          }
+
+          @Override
+          public void OnErrorVolleyFinished(VolleyError error, com.farzaneganco.sant.sant.logic.User user) {
+            // TODO Auto-generated method stub
+            Log.i("Login",
+              "Error in webservice.User.Login.ErrorListener, Username: "
+                + user.GetUsername() + ",  Password: "
+                + user.GetPassword() + ", Error: " + error.getMessage());
+            Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
+
+          }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       } catch (InterruptedException e) {
         return false;
       }
@@ -310,7 +375,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
       // Call login api
 
       // TODO: register the new account here.
-      return false;
+      return true;
     }
 
     @Override
@@ -319,9 +384,9 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
       showProgress(false);
 
       if (success) {
-        finish();
+        //finish();
       } else {
-        mPasswordView.setError(getString(R.string.error_incorrect_password));
+        //mPasswordView.setError(getString(R.string.error_incorrect_password));
         mPasswordView.requestFocus();
       }
     }
