@@ -20,7 +20,6 @@ public class Menu {
 	public static String[] navigationArray = { "خروج از حساب کاربری" };
 
 	public static void SetMenuItem(final Activity ctx) {
-		/*
 		try {
 			ImageView imgMenu = (ImageView) ctx.findViewById(R.id.imgMenu);
 			final DrawerLayout drawerLayout = (DrawerLayout) ctx.findViewById(R.id.drawer_layout);
@@ -57,7 +56,7 @@ public class Menu {
 
 					case 0:
 						Bind.RemoveUserInfo(ctx);
-						Intent exit = new Intent(ctx, com.farzaneganco.sant.sant.Login.class);
+						Intent exit = new Intent(ctx, com.farzaneganco.sant.sant.LoginActivity.class);
 						ctx.startActivity(exit);
 						ctx.finish();
 						break;
@@ -66,6 +65,5 @@ public class Menu {
 			});
 		} catch (Exception e) {
 		}
-		*/
 	}
 }

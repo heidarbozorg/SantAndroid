@@ -191,7 +191,7 @@ public class Forward extends Activity {
 	@Override
 	protected Dialog onCreateDialog(int id) {
 		//switch (id) {
-		if (id){
+		if (id == 1){
 		//case TIME_DIALOG_ID:
 			// set time picker as current time
 			return new TimePickerDialog(this, timePickerListener, hour, minute,
@@ -331,7 +331,7 @@ public class Forward extends Activity {
 			@Override
 			public void onClick(View v) {
 				timePickerKind = 3;
-				showDialog(Action.TIME_DIALOG_ID);
+				//showDialog(Action.TIME_DIALOG_ID);
 			}
 		});
 
@@ -341,7 +341,7 @@ public class Forward extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				timePickerKind = 1;
-				showDialog(Action.TIME_DIALOG_ID);
+				//showDialog(Action.TIME_DIALOG_ID);
 			}
 		});
 
@@ -351,7 +351,7 @@ public class Forward extends Activity {
 			@Override
 			public void onClick(View v) {
 				timePickerKind = 2;
-				showDialog(Action.TIME_DIALOG_ID);
+				//showDialog(Action.TIME_DIALOG_ID);
 
 			}
 		});
